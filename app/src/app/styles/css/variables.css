@@ -1,0 +1,24 @@
+:root {
+
+  /* colors */
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --grey-darker: rgb(73, 73, 73);
+  --grey-lighter: rgb(213, 213, 213);
+  --beige: rgb(245, 245, 245);
+  --green: rgb(0, 102, 102);
+  --blue: rgb(15, 152, 208);
+
+  /* size */
+  --width-logo: 90px;
+  --height-header: 80px;
+  --height-footer: 100px;
+  --max-width-default: 900px;
+
+  /* font */
+  --font-size-date: 10px;
+  --font-size-default: 12px;
+  --font-size-title: 25px;
+  --font-family-default:'Source Sans Pro', sans-serif;
+
+}

@@ -1,0 +1,84 @@
+.chatApp__container {
+
+  width: 100%;
+  height: calc( 100% - 80px );
+  margin: 80px 0 0 0;
+  position: relative;
+
+}
+
+.chatApp__container__list {
+
+  width: 100%;
+  max-width: var(--max-width-default);
+  height: calc( 100% - 100px );
+  margin: 0 auto;
+  padding: 30px;
+  overflow-y: scroll;
+  position: relative;
+
+}
+
+.chatApp__container__list__message {
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.chatApp__container__list__message--isOperator {
+
+  flex-direction: row-reverse;
+
+}
+
+.chatApp__container__list__message__img {
+
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--grey-lighter);
+  border-radius: 100%;
+
+}
+
+.chatApp__container__list__message__content {
+
+  padding: 0 15px;
+  color: var(--grey-darker);
+  width: calc( 100% - 60px );
+
+}
+
+.chatApp__container__list__message__content__author {
+
+  text-align: left;
+
+}
+
+.chatApp__container__list__message__content__message {
+
+  margin: 10px 0;
+  padding: 15px 25px;
+  border-radius: 30px;
+  border: 1px solid var(--grey-lighter);
+  background-color: var(--white);
+  white-space: normal;
+  word-break: break-all;
+
+}
+
+.chatApp__container__list__message--isOperator .chatApp__container__list__message__content__message {
+
+  background: var(--blue);
+  color: var(--white);
+  border: 0;
+
+}
+
+.chatApp__container__list__message__content__date {
+
+  font-size: var(--font-size-date);
+  text-align: right;
+
+}

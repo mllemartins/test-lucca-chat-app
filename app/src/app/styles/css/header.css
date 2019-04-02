@@ -1,0 +1,39 @@
+.chatApp__header {
+
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: var(--height-header);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: var(--green);
+
+}
+
+.chatApp__header__logo {
+    
+    width: var(--width-logo);
+    background: #006666;
+    padding: 20px;
+    border-radius: 90%;
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    left: 50px;
+
+}
+
+.chatApp__header__title {
+
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  font-size: var(--font-size-title);
+  color: var(--white);
+  text-transform: uppercase;
+  transform: translate( -50%, -50% ); /* center element */
+
+}

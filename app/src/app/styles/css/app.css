@@ -1,0 +1,44 @@
+@charset 'UTF-8';
+
+*,
+*:after,
+*:before {
+
+  box-sizing: border-box;
+
+}
+
+html {
+
+  width: 100%;
+  height: 100%;
+
+}
+
+body {
+
+  width : 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--beige);
+  font-size: var(--font-size-default);
+  font-family: var(--font-family-default);
+}
+
+.mainBody {
+
+  top: 0;
+  left: 0;
+  width : 100%;
+  height: 100%;
+  position: relative;
+
+}
+
+.chatApp {
+
+  width : 100%;
+  height: 100%;
+  position: relative;
+
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="chatApp">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>chat-app</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+
+    <!-- partial css stylesheets -->
+    <link rel="stylesheet" href="./src/app/styles/css/variables.css">
+    <link rel="stylesheet" href="./src/app/styles/css/header.css">
+    <link rel="stylesheet" href="./src/app/styles/css/content.css">
+    <link rel="stylesheet" href="./src/app/styles/css/loader.css">
+    <link rel="stylesheet" href="./src/app/styles/css/footer.css">
+    <link rel="stylesheet" href="./src/app/styles/css/app.css">
+
+  </head>
+  <body class="animated faster fadeIn delay-1s">
+
+    <div class="mainBody" ng-controller="ChatController">
+
+      <section class="chatApp">
+
+        <!-- header -->
+        <header class="chatApp__header">
+          <img class="chatApp__header__logo" src="./src/assets/icon-logo.svg" alt="icon-logo">
+          <h1 class="chatApp__header__title">Chat App</h1>
+        </header>
+    
+        <!-- chat app -->
+        <div class="chatApp__container">
+  
+          <!-- chat app container list -->
+          <ul class="chatApp__container__list">
+            <li class="chatApp__container__list__message animated faster fadeInUp {{message.isOperator}}" ng-repeat="message in messages">
+              <img ng-src="{{message.img}}" class="chatApp__container__list__message__img" ng-class="{left:message.me}">
+              <div class="chatApp__container__list__message__content">
+                <p class="chatApp__container__list__message__content__author">
+                  {{message.author}}
+                </p>
+                <p class="chatApp__container__list__message__content__message">
+                  {{message.message}}
+                </p>
+                <p class="chatApp__container__list__message__content__date">
+                  {{message.time | date:'yyyy/MM/dd HH:mm:ss'}}
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <!-- chat app loader -->
+          <div class="chatApp__container__loader animated faster fadeInUp" ng-if="messageInput">
+            <div class="chatApp__container__loader__wrapper" ng-class="{show:messageInput}">
+              <img class="chatApp__container__loader__img" ng-src="{{messageInput.img}}">
+              <div class="chatApp__container__loader__content">
+                <div class="chatApp__container__loader__content__loading">
+                  <img src="./src/assets/icon-three-dots.svg" alt="icon-three-dots"/>
+                </div>
+                <p class="chatApp__container__loader__content__message">
+                  {{messageInput.author}} écrit ...
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- footer -->
+          <footer class="chatApp__footer">
+
+            <!-- form -->
+            <form class="chatApp__footer__form" ng-submit="sendMessage()">
+              <div class="chatApp__footer__form__input__overlay">
+                <img src="./src/assets/icon-happiness.svg" alt="icon-happiness">
+                <input class="chatApp__footer__form__input" placeholder="Envoyer un message" ng-model="currentMessage" ng-change="updateInput()">
+                <img src="./src/assets/icon-clip.svg" alt="icon-svg">
+              </div>
+              <button class="chatApp__footer__form__btn chatApp__footer__form__btn--send">
+                <img src="./src/assets/icon-send.svg" alt="icon-send">
+              </button>
+            </form>
+            
+          </footer>
+  
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- angular -->
+    <script rel="preload" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script rel="preload" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
+    <!-- app -->
+    <script rel="preload" src="./src/app/scripts/app.js"></script>
+
+  </body>
+</html>
