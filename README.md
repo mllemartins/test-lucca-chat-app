@@ -2,7 +2,7 @@
 #### Test-lucca-chat-app ####
 
 
-![Sample](https://lh3.googleusercontent.com/XQRK6-bWQ_cRLUOWT3COfOTviazBQv2cvM6FNAkS_KFVuXSW6Ohyh829Xb1cCapfueJeeyuUN5r3aRUlbsq92xuS48jDQufugkdQfUAChwq-IJULz1Ty3JvC6_y9H1doJDu87bARKu2nv1pNbUWbV3kJSNJ91k2BneHcB59LlulR5EBRAv8wv5XwtT_7bfnXbAjd-4ZlAuPDBHOYtn75DcqYjx0NUU9bc7HyjJO-IsXgeRdiF8fpH1Ej9pd5L84tXkuaD_ZdDetgnYkctdorguz5iG21BuCIMT3oDhglGKp8E6NKP_10Gqy9V9OChi9YaQavgsBOZrsMAcKR6tFdBP4mU7ArbFVUjwIRRWp3ZBnPDH_eFFMUhTtm2dxY1kzmoMUGQP1Kl9lnggAnpM_NcevcWaYJi0F01iVKGWx1yTQsYK84KIfrGqEs5gaJeNcy6Bay_mA3rs3EsL26uTkfFI-cNYx_oYihZGi_v1B2dDIaq_L1kdOsD_z3deV7_W-Ltbi95Ge51QUhSiTr9eB4iKs11yXEhf5VqiA8f21TiaKjFYJMd_bgSoIDTGoIoBenAYqnGutMbD77koOHOyOMo-QxFxMgkJoXwvnuQG4=w3000-h5331)
+![Sample](https://github.com/mllemartins/test-lucca-chat-app/blob/master/ui/chat-app-mockup.jpg?raw=true)
 
 invision: https://invis.io/ZURC6VCA5M7
 
